@@ -48,20 +48,21 @@
 						<span aria-hidden="true">&times;</span>
 					</button>
 				</div>
-				<?= form_open('insertar') ?>
+				<form id="aniadirUser" method="post">
 					<div class="modal-body">
 						<div class="form row">
 							<div class="form-group col-md-3">
 								<label for="cedula">Cédula</label>
-								<input type="text" name="cedula" class="form-control" id="cedula">
+								<input type="text" name="cedula" class="form-control" id="cedula" required>
+								<small id="cedhelp" class="form-text text-muted text-danger"></small>
 							</div>
 							<div class="form-group col">
 								<label for="nombre">Nombre</label>
-								<input type="text" name="nombre" class="form-control" id="nombre">
+								<input type="text" name="nombre" class="form-control" id="nombre" required>
 							</div>
 							<div class="form-group col">
 								<label for="apellido">Apellido</label>
-								<input type="text" name="apellido" class="form-control" id="apellido">
+								<input type="text" name="apellido" class="form-control" id="apellido" required>
 							</div>
 						</div>
 						<div class="form row">
@@ -71,21 +72,22 @@
 							</div>
 							<div class="form-group col">
 								<label for="nombre">Correo</label>
-								<input type="text" name="correo" class="form-control" id="correo">
+								<input type="text" name="correo" class="form-control" id="correo" required>
 							</div>
 							<div class="form-group col">
 								<label for="usuario">Usuario</label>
-								<input type="text" name="usuario" class="form-control" id="usuario">
+								<input type="text" name="usuario" class="form-control" id="usuario" required>
+								<small id="userhelp" class="form-text text-muted text-danger"></small>
 							</div>
 							<div class="form-group col">
 								<label for="usuario">Clave</label>
-								<input type="text" name="clave" class="form-control" id="clave">
+								<input type="password" name="clave" class="form-control" id="clave" required>
 							</div>
 						</div>
 					</div>
 					<div class="modal-footer">
 						<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-						<button type="button" class="btn btn-primary">Save changes</button>
+						<button type="submit" class="btn btn-primary">Enviar</button>
 					</div>
 				</form>
 			</div>

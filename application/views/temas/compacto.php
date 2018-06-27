@@ -10,7 +10,7 @@
 		</ul>
 		<p>Las osteonas son circulares y no se ajustan perfectamente entre ellas, y las zonas que quedan entre las osteonas están llenas de <b>laminillas intersticiales</b> y <b>laminillas circunferenciales</b>.</p><p> Los vasos sanguíneos y linfáticos y los nervios provenientes del periostio penetran en el hueso compacto, por los <b>conductos perforantes de Volkmann</b>.</p>
 		<div class="row justify-content-center">
-			<img src="<?= base_url() ?>/application/views/assets/img/tejidoOseoCompactoyEsponjose.jpg" class="med img-thumbnail">
+			<img src="http://127.0.0.1/JFLO/nadales/application/views/assets/img/tejidoOseoCompactoyEsponjose.jpg" class="med img-thumbnail">
 		</div>
 	</div>
 </div>

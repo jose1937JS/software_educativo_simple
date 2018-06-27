@@ -10,7 +10,7 @@
 			<li>Huesos sesamoideos, están en algunos tendones, a los que protegen del uso y desgarro excesivos. Por ejemplo: la rótula.</li>
 		</ol>
 		<div class="row justify-content-center">
-			<img src="<?= base_url() ?>/application/views/assets/img/Tipos-de-huesos-del-cuerpo-humano.jpg" class="med img-thumbnail">
+			<img src="http://127.0.0.1/JFLO/nadales/application/views/assets/img/Tipos-de-huesos-del-cuerpo-humano.jpg" class="med img-thumbnail">
 		</div>
 	</div>
 </div>

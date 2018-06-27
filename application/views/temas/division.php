@@ -7,7 +7,7 @@
 			<li>Esqueleto apendicular: Formado por 126 huesos. De los miembros, incluidas las cinturas escapular y pelviana.</li>
 		</ul>
 		<div class="row justify-content-center">
-			<img src="<?= base_url() ?>/application/views/assets/img/Esqueleto-Axial-Y-Apendicular-1.png" class="img-thumbnail gra">
+			<img src="http://127.0.0.1/JFLO/nadales/application/views/assets/img/Esqueleto-Axial-Y-Apendicular-1.png" class="img-thumbnail gra">
 		</div>
 	</div>
 </div>

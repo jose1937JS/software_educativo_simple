@@ -5,6 +5,6 @@
 		<p>Posee más sustancia intercelular que células. No tiene irrigación capilar propia, por eso sus células (los condrocitos) reciben el oxígeno y los nutrientes por difusión desde el pericondrio (revestimiento fibroso).</p>
 	</div>
 	<div class="col">
-		<img src="<?= base_url() ?>/application/views/assets/img/cartilago.jpg" class=" img-thumbnail">
+		<img src="http://127.0.0.1/JFLO/nadales/application/views/assets/img/cartilago.jpg" class=" img-thumbnail">
 	</div>
 </div>

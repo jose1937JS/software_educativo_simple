@@ -15,9 +15,8 @@
 
 		<div class="navbar-nav-scroll">
 			<ul class="navbar-nav bd-navbar-nav flex-row">
-				<li class="nav-item"><a class="nav-link active" href="#">PDF</a></li>
-				<li class="nav-item"><a class="nav-link" href="#">Videos</a></li>
-				<li class="nav-item"><a class="nav-link" href="#">Galeria</a></li>
+				<li class="nav-item"><?= anchor('logout','Cerrar Sesión', 'class="nav-link btn btn-flat"') ?></li>
+				<!-- <li class="nav-item"><a class="nav-link" href="#material">Material Informátivo</a></li> -->
 			</ul>
 		</div>
 		<ul class="navbar-nav flex-row ml-md-auto d-none d-md-flex">
@@ -25,12 +24,23 @@
 		</ul>
 	</header>
 
+	<?php if ( $notify->result() ): ?>
+	
+		<div class="alert alert-success fade show" role="alert">
+			Tu prueba ya ha sido revisada y tu calificación es de <strong><?= $notify->result()[0]->calificacion ?></strong> puntos.
+			<button type="button" class="close" id="close">
+				<span aria-hidden="true">&times;</span>
+			</button>
+		</div>
+	
+	<?php endif ?>
+
 	<div class="container-fluid">
 		<div class="row flex-xl-nowrap">
 			<div class="col-12 col-md-3 col-xl-2 bd-sidebar">
 				
 				<form class="bd-search d-flex align-items-center">
-					<input type="search" class="form-control" id="search-input" placeholder="Buscar ..." aria-label="Search for..." autocomplete="off">
+					<input type="search" class="form-control" id="search-input" placeholder="Don't work" aria-label="Search for..." autocomplete="off">
 					<button class="btn btn-link bd-search-docs-toggle d-md-none p-0 ml-3" type="button" data-toggle="collapse" data-target="#bd-docs-nav" aria-controls="bd-docs-nav" aria-expanded="false" aria-label="Toggle docs navigation">
 						<svg viewbox="0 0 30 30" width="30" height="30" focusable="false"><title>Menu</title><path stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-miterlimit="10" d="M4 7h22M4 15h22M4 23h22"/></svg>
 					</button>
@@ -42,7 +52,7 @@
 						<a class="bd-toc-link" href="#">Sistema esquelético</a>
 						<!-- sub categorias q se deben desplegar al presionar el enlace de arriba -->
 						<ul class="nav bd-sidenav">
-							<li class="active bd-sidenav-active"><a href="intro">Introducción</a></li>
+							<li class="active bd-sidenav-active"><a href="#intro">Introducción</a></li>
 							<li><a href="#funciones">Funciones del sistema esquelético</a></li>
 							<li><a href="#estructura">Estructura de los huesos</a></li>
 							<li><a href="#histologia">Histología del tejido óseo</a></li>
@@ -104,6 +114,8 @@
 				</nav>
 			</div>
 
+
+
 			<main class="col-12 col-md-9 pl-md-5 bd-content" role="main">
 				<h2 class="bd-title" id="content">Sistema Esquelético</h2>
 
@@ -120,11 +132,17 @@
 			</main>
 		</div>
 	</div>
+
 	<script src="<?= base_url() ?>/application/views/assets/jquery.min.js"></script>
 	<!-- <script src="../assets/docs.min.js"></script> -->
 	<script src="<?= base_url() ?>/application/views/assets/scripts.js"></script>
+
+	<script>
+		$(function(){
+			$('#close').click(function(){
+				$('.alert').hide('slow')
+			})
+		})
+	</script>
 </body>
 </html>
-
-
-

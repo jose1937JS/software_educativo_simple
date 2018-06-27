@@ -7,7 +7,7 @@
 			<li></li>
 		</ul>
 		<div class="row justify-content-center">
-			<img src="<?= base_url() ?>/application/views/assets/img/pies.jpg" class="peq img-thumbnail">
+			<img src="http://127.0.0.1/JFLO/nadales/application/views/assets/img/pies.jpg" class="peq img-thumbnail">
 		</div>
 	</div>
 </div>
