@@ -153,6 +153,11 @@ class Controlador extends CI_Controller {
 		$this->modelo->nota($id_estudiante, $calificacion);
 	}
 
+	public function material()
+	{
+		$this->load->view('material');
+	}
+
 	public function logout()
 	{
 		if ($this->session->has_userdata('usuario'))

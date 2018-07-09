@@ -16,7 +16,7 @@
 		<div class="navbar-nav-scroll">
 			<ul class="navbar-nav bd-navbar-nav flex-row">
 				<li class="nav-item"><?= anchor('logout','Cerrar Sesión', 'class="nav-link btn btn-flat"') ?></li>
-				<!-- <li class="nav-item"><a class="nav-link" href="#material">Material Informátivo</a></li> -->
+				<li class="nav-item"><?= anchor('Controlador/material', 'Material Informátivo', 'class="nav-link btn"') ?></li>
 			</ul>
 		</div>
 		<ul class="navbar-nav flex-row ml-md-auto d-none d-md-flex">
